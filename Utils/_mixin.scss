@@ -1,0 +1,32 @@
+@mixin Block-a{
+   text-decoration: none;
+   display: flex;
+   font-size: 1em;
+   text-transform: uppercase;
+   color:$color-primary;
+}
+
+@mixin hover-a {
+   text-decoration: underline;
+   color: white;
+   background-color: #e6af2e;
+ }
+
+@mixin Box-shadow{
+   box-shadow: 5px 1px 10px rgb(237, 232, 232)}
+
+@mixin Flex-espace{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+@mixin Flex-center{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@mixin Tex-shadow{
+   text-shadow: 1px 1px 1px rgb(238, 231, 231);
+}
