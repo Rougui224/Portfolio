@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/contact.css">
+    <script src="https://kit.fontawesome.com/b5b61096f1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <nav id="mon_ancre" class="nav">
+            <a href="../index.html" class="nav__home">acceuil</a>
+            <a href="#" class="nav__cv"> télécharger mon cv complet</a>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <h1>Contactez-moi</h1>
+            <fieldset>
+               <label for="nom">Nom</label> : <input type="text" name="nom" id="nom"  autofocus> 
+            </fieldset>
+            <fieldset>
+               <label for="prenom"> Prénom</label> : <input type="text" name="prenom" id="prenom">
+            </fieldset>
+            <fieldset>
+               <label for="tel"> Numéro de téléphone</label> : <input type="tel" name="prenom" id="tel" >
+            </fieldset>
+            <fieldset>
+               <label for="mail"> Mail</label> : <input type="email" name="mail" id="mail">
+            </fieldset>
+           
+            <fieldset>
+                <p> Vous me contactez pour :</p>
+              <div class="form__choice">
+               <input type="checkbox" name="Maquette" id="Maquette"> <label for="Maquette">Maquette</label>
+               <br>
+               <input type="checkbox" name="Tamplete" id="Tamplete"> <label for="Tamplete">Tamplete</label>
+               <br>
+               <input type="checkbox" name="site" id="site"> <label for="site">site</label>
+               <br>
+               <input type="checkbox" name="Application" id="Application"> <label for="Application">Application</label>
+               <br>
+              </div>
+            
+            </fieldset>
+    
+            <fieldset>
+               <label class="label--width" for="message">Redigez votre message ici:</label> <br>
+               <textarea name="message" id="message" rows="5" cols="30"></textarea>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Envoyer" class="bouton">
+            </fieldset>
+            
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__description">
+            <div class="footer__description__text">
+                <h3> Mentions légales</h3>
+                <a href="#">Politique en matière de cookies</a>
+                <a href="#">Politiques de confidentialités</a>
+                <a href="#">Conditions d'utilisation</a>
+            </div>
+            <div class="footer__description__text">
+                <h3>A Propos</h3>
+                <a href="#">Fonctionnement du site
+                </a>
+                <a href="#">
+                    Conditions générales de vente
+
+                </a>
+                <a href="#">
+                    Données et confidentialité
+
+                </a>
+            </div>
+            <div class="footer__description__text">
+                <h3>Contact</h3>
+                <h5> Téléphone :</h5><p> 0033100600431</p>
+                <h5>Mail :      </h5>   <p> rd546@gmail.com</p>
+                <h5> En ligne :</h5>
+                <div class="footer__description__text__icon">
+                    <a href="#" >
+                        <i class="fa-brands fa-facebook-f" style="color:  #202124;"></i>
+                    </a>
+                    <a href="#" >
+                        <i class="fa-brands fa-instagram" style="color:  #202124;"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in" style="color:  #202124;"></i>
+                    </a>
+                    <a href="#" >
+                        <i class="fa-brands fa-twitter" style="color:  #202124;"></i>
+                    </a>
+                </div>
+                <p> &copy;2023 RD	</p>
+            </div>
+        </div>
+    
+</body>
+</html>
