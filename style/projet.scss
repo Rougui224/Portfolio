@@ -1,0 +1,221 @@
+@import '../Utils/_variables.scss';
+@import '../base/_fondation.scss';
+@import '../Utils/_mixin.scss';
+// entête
+
+
+.nav{
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    @include Flex-espace;
+    margin: auto;
+    @include Box-shadow ;
+    background-color: white;
+    &__home {
+        text-decoration: none;
+        display: flex;
+        font-size: 1em;
+        text-transform: uppercase;
+        color:$color-secondary;   
+        font-weight: bold; 
+        width: 90px;
+        height: 25px;
+        justify-content: center;
+        margin-left: 20px;
+        transition: transform 200ms;
+        &:hover{
+            @include hover-a;
+            transform: scale(1.2)
+        }
+
+    }
+    &__cv{ 
+        width: 320px;
+        height: 35px;
+        text-decoration: none;
+        font-size: 1em;
+        color: white;
+        text-transform: uppercase;
+        @include Flex-center;
+        background: linear-gradient(7deg, rgba(195,120,34,1) 0%, rgb(222, 199, 97) 100%);         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);      
+        transition: all 500ms ease-in-out;
+        border-radius: 5px;
+        &:hover{
+           transform: scale(1.1);
+           box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+         
+        }
+       
+       
+
+
+    }
+}
+body{
+    background-color: #F7F7F7;
+ }
+
+main {
+    display: flex;
+    gap: 50px;
+    width: 80%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+.card{
+    width: 320px;
+    height: 250px;
+    border-radius: 20px;
+    flex-direction: column;
+    border: 2px solid white;
+    overflow: hidden;
+    @include Box-shadow;
+    @include Block-a;
+    transition: transform 400ms;
+    &:hover{
+        transform: scale(1.2);
+    }
+    &__pic{
+        width:100%;
+        height: 60%;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__text{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+        background-color: white;
+      
+        &__heading{
+            width: 100%;
+            color: $color-secondary;
+        }
+        &__description{
+            width: 100%;
+            text-transform: none;
+            color: $color-secondary;
+        }
+    }
+}
+
+.footer{
+    background-color:$color-primary;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: white;
+    &__description{
+       width: 100%;
+       height: 100%;
+       display: flex;
+       &__text{
+          width: 33%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          h3,h5,p{
+             color: white;
+          }
+        
+          a{
+             text-decoration: none;
+             display: flex;
+             font-size: 0.8em;
+             text-transform: none;
+             color:white;
+          }
+          &__icon{
+             display: flex;
+             gap: 20px;
+             a{
+                font-size: 1.5em;
+             }
+          }
+          p{
+             font-size: 0.7em;
+          }
+ 
+       }
+    }
+ 
+ }
+ @media screen and (min-width: 768px) and (max-width: 1024px){
+    .nav{
+        flex-wrap: wrap;
+        gap: 5px
+    }
+    .nav__cv{
+        font-size: 0.7em;
+    }
+    .card{
+        width: 75%;
+        height: 50%;
+        h1{
+            font-size: 1em;
+        }
+        p{
+            font-size: 0.9em;
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    .nav{
+        flex-wrap: wrap;
+        gap: 5px;
+        &__home{
+            font-size: 0.8em;
+            width: 53px;
+            margin-left:0px;
+        }
+        &__cv{
+            font-size:0.7em;
+            width: 200px;
+            height: 25px;
+        }
+
+    }
+    main {
+        flex-direction: column;
+        width: 100%;
+        height: 750px;
+    }
+    .card{
+        width: 80%;
+        height: 35%;
+        h1{
+            font-size: 1em;
+        }
+        p{
+            font-size: 0.9em;
+        }
+    }
+
+
+    .footer{
+        height: 550px;
+
+        &__description{
+           flex-direction: column;
+           &__text{
+              width: 100%;
+              height: 30%;
+           }
+        }
+     }
+}
+ 
